@@ -84,7 +84,6 @@ public class LoginActivity extends Activity {
                 finish();
             }
         });
-
     }
 
     public void sendNetworkRequest(LoginUser user) {
