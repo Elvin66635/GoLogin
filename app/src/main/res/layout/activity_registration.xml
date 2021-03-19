@@ -129,39 +129,41 @@
         app:layout_constraintTop_toBottomOf="@+id/regConfPassEd"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/logIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12sp"
-        android:text="@string/log_in"
-        android:textColor="@android:color/white"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
-        app:layout_constraintVertical_bias="0.14" />
+       <TextView
+           android:id="@+id/logIn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12sp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="12sp"
+           android:layout_marginBottom="25dp"
+           android:text="@string/log_in"
+           android:textColor="@android:color/white"
+           android:textSize="16dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.072"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+           app:layout_constraintVertical_bias="0.14" />
 
-    <TextView
-        android:id="@+id/regForgotPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12sp"
-        android:text="@string/forgot_password"
-        android:textColor="@android:color/white"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
-        app:layout_constraintVertical_bias="0.139" />
+       <TextView
+           android:id="@+id/regForgotPass"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8sp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="36dp"
+           android:layout_marginBottom="25dp"
+           android:text="@string/forgot_password"
+           android:textColor="@android:color/white"
+           android:textSize="16dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.93"
+           app:layout_constraintStart_toEndOf="@+id/textView"
+           app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+           app:layout_constraintVertical_bias="0.0" />
 
    </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

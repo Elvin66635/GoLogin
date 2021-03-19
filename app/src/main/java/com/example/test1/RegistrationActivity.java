@@ -78,8 +78,8 @@ public class RegistrationActivity extends Activity {
                     SharedPreferences preferences = getSharedPreferences("MY_APP", Context.MODE_PRIVATE);
                     preferences.edit().putString("TOKEN", token).apply();
 
-                    Toast.makeText(RegistrationActivity.this, "Token: " + token, Toast.LENGTH_SHORT).show();
                     intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    Toast.makeText(RegistrationActivity.this, "Token: " + token, Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                     finish();
                 } else {

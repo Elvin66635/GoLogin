@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.test1.model.LoginUser;
 import com.example.test1.model.UserInfo;
@@ -71,6 +72,7 @@ public class LoginActivity extends Activity {
                         edPass.getEditText().getText().toString());
                 sendNetworkRequest(user);
                 validation();
+                getInfoFromRequest();
             }
         });
 
@@ -124,6 +126,8 @@ public class LoginActivity extends Activity {
                     if (edEmail.getEditText().getText().toString().equals(retrivedEmail) &&
                             edPass.getEditText().getText().toString().equals(retrivedPass)) {
                         startActivity(intent);
+                    }else {
+                        Toast.makeText(LoginActivity.this, "Email or Password is wrong", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Log.d(TAG, "" + response.code());
