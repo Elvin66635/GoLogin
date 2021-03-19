@@ -127,7 +127,7 @@ public class LoginActivity extends Activity {
                             edPass.getEditText().getText().toString().equals(retrivedPass)) {
                         startActivity(intent);
                     }else {
-                        Toast.makeText(LoginActivity.this, "Email or Password is wrong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Email or Password is incorrect", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Log.d(TAG, "" + response.code());
