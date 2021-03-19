@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        style="@style/AppTheme"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/createdDateTxt"
+        android:layout_width="wrap_content"
+        style="@style/Theme.AppCompat"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTxt"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+</RelativeLayout>
